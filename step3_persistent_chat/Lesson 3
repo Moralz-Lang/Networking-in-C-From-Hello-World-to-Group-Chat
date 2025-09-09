@@ -1,0 +1,18 @@
+🚧 Troubleshooting
+
+Issue: Client disconnects abruptly
+✅ Fix: Server detects read() <= 0 and breaks loop.
+
+Issue: Messages overlap or cut off
+✅ Fix: Always clear buffer with memset.
+
+❓ Checkpoint Questions
+
+Q1: Why do we need the while(1) loops?
+A1: To allow multiple messages instead of stopping after one exchange.
+
+Q2: What happens if the client disconnects unexpectedly?
+A2: read() returns 0 or negative, so the server breaks the loop and closes the connection.
+
+Q3: How could you allow multiple clients at once?
+A3: By adding threads or select(). That’s what we’ll do in the next step.
