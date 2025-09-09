@@ -1,45 +1,23 @@
-# Networking in C — Learning Project
+# Step 2: Simple TCP Server & Client
 
-This repository is a **complete walkthrough project** for learning **C programming and TCP networking**.  
-It is designed like a classroom journey: each step introduces new concepts, includes **checkpoint questions**, and captures **troubleshooting issues** with their solutions.  
-
----
-
-## 📖 Learning Outcomes
-By completing this repo, you will learn:
-- ✅ How to compile and run C programs with `gcc`
-- ✅ Basics of **TCP sockets** (`socket`, `bind`, `listen`, `accept`, `connect`)
-- ✅ Sending & receiving data over the network with `read` and `send`
-- ✅ Handling client disconnections gracefully
-- ✅ Using **threads** for concurrency
-- ✅ Using **mutexes** for shared data protection
-- ✅ Building a **multi-client group chat server**
+We built a minimal server and client that exchange one message.
 
 ---
 
-## 📂 Project Steps
-1. [Step 1: Hello World](./step1_hello_world)  
-2. [Step 2: Simple TCP Server & Client](./step2_simple_server_client)  
-3. [Step 3: Persistent Chat (one client)](./step3_persistent_chat)  
-4. [Step 4: Threaded Multi-Client Server](./step4_threaded_server)  
-5. [Step 5: Group Chat Server](./step5_group_chat)  
+## 🔨 What We Built
+- A **TCP server** that listens on port 8080 and replies with `"Hello from server"`.
+- A **TCP client** that connects to `127.0.0.1:8080` and sends `"Hello from client"`.
 
 ---
 
 ## ⚙️ How to Compile & Run
-Each step folder has its own `README.md` with full instructions.  
-General pattern:
-
+Terminal 1 (Server):
 ```bash
-gcc filename.c -o output_binary   # compile
-./output_binary                   # run
-🚀 Final Outcome
-By the end, you’ll have built:
+gcc server.c -o server
+./server
+Terminal 2 (Client):
 
-A multi-client group chat server in C
-
-A reusable TCP client
-
-Deep understanding of how networking works in C
-
-This repo is designed as a hands-on textbook. Read, compile, run, troubleshoot, and answer the checkpoint questions at each step!
+bash
+Copy code
+gcc client.c -o client
+./client
