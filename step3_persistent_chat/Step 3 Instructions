@@ -1,0 +1,23 @@
+# Step 3: Persistent Chat (Single Client)
+
+We extended the server and client to support continuous messaging until one side types `exit`.
+
+---
+
+## 🔨 What We Built
+- **Server**: stays connected and keeps reading messages until client disconnects.
+- **Client**: can send multiple messages and receive server responses.
+
+---
+
+## ⚙️ How to Compile & Run
+Terminal 1 (Server):
+```bash
+gcc server_chat.c -o server_chat
+./server_chat
+Terminal 2 (Client):
+
+bash
+Copy code
+gcc client_chat.c -o client_chat
+./client_chat
