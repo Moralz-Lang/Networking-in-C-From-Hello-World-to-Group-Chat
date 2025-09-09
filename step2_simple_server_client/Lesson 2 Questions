@@ -1,0 +1,15 @@
+🚧 Troubleshooting
+
+Issue: “Connection refused”
+✅ Fix: Always run the server first, then the client. Both must use the same port.
+
+❓ Checkpoint Questions
+
+Q1: What does AF_INET mean in socket()?
+A1: It specifies IPv4.
+
+Q2: Why do we use htons(PORT)?
+A2: To convert the port number to network byte order.
+
+Q3: What does listen(server_fd, 3) do?
+A3: It puts the server in a listening state, with a queue for up to 3 pending connections.
