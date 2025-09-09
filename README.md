@@ -51,7 +51,6 @@ Build a multi-client group chat system
 
 🎯 Outcome for Learners
 
-This repo now serves as:
 
 A guided course for C networking
 
