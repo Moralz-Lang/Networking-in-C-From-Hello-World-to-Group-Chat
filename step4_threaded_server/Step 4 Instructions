@@ -1,0 +1,23 @@
+# Step 4: Threaded Multi-Client Server
+
+We upgraded our server to support **multiple clients at the same time** by using threads.
+
+---
+
+## 🔨 What We Built
+- **Server**: Spawns a new thread for each client.
+- **Client**: Same as Step 3 (can reuse `chat_client.c`).
+
+---
+
+## ⚙️ How to Compile & Run
+Terminal 1 (Server):
+```bash
+gcc threaded_server.c -o threaded_server -lpthread
+./threaded_server
+Terminal 2+ (Clients):
+
+bash
+Copy code
+gcc chat_client.c -o chat_client
+./chat_client
