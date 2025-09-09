@@ -1,0 +1,45 @@
+# Networking in C — Learning Project
+
+This repository is a **complete walkthrough project** for learning **C programming and TCP networking**.  
+It is designed like a classroom journey: each step introduces new concepts, includes **checkpoint questions**, and captures **troubleshooting issues** with their solutions.  
+
+---
+
+## 📖 Learning Outcomes
+By completing this repo, you will learn:
+- ✅ How to compile and run C programs with `gcc`
+- ✅ Basics of **TCP sockets** (`socket`, `bind`, `listen`, `accept`, `connect`)
+- ✅ Sending & receiving data over the network with `read` and `send`
+- ✅ Handling client disconnections gracefully
+- ✅ Using **threads** for concurrency
+- ✅ Using **mutexes** for shared data protection
+- ✅ Building a **multi-client group chat server**
+
+---
+
+## 📂 Project Steps
+1. [Step 1: Hello World](./step1_hello_world)  
+2. [Step 2: Simple TCP Server & Client](./step2_simple_server_client)  
+3. [Step 3: Persistent Chat (one client)](./step3_persistent_chat)  
+4. [Step 4: Threaded Multi-Client Server](./step4_threaded_server)  
+5. [Step 5: Group Chat Server](./step5_group_chat)  
+
+---
+
+## ⚙️ How to Compile & Run
+Each step folder has its own `README.md` with full instructions.  
+General pattern:
+
+```bash
+gcc filename.c -o output_binary   # compile
+./output_binary                   # run
+🚀 Final Outcome
+By the end, you’ll have built:
+
+A multi-client group chat server in C
+
+A reusable TCP client
+
+Deep understanding of how networking works in C
+
+This repo is designed as a hands-on textbook. Read, compile, run, troubleshoot, and answer the checkpoint questions at each step!
