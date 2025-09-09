@@ -1,0 +1,18 @@
+🚧 Troubleshooting
+
+Issue: “Segmentation fault” after client disconnect
+✅ Fix: Always free() the socket pointer in handle_client.
+
+Issue: Memory leaks from threads
+✅ Fix: Use pthread_detach() so finished threads clean themselves up.
+
+❓ Checkpoint Questions
+
+Q1: Why do we need threads for multiple clients?
+A1: Because otherwise the server would block on one client and ignore others.
+
+Q2: Why do we use pthread_detach(thread_id)?
+A2: To automatically free resources when a thread exits, avoiding memory leaks.
+
+Q3: What happens if we forget detach or join?
+A3: Threads become “zombies” and consume system resources until the server eventually crashes.
