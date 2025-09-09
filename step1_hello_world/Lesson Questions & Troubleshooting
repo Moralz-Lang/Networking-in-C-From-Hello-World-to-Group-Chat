@@ -1,0 +1,17 @@
+🚧 Troubleshooting
+
+Issue: “Nothing popped up after gcc hello.c”
+
+Fix: Remember you need to run the compiled file with ./hello.
+
+Issue: “No hello file in folder”
+
+Fix: Run ls to confirm. The compiled binary is created in the same directory.
+
+❓ Checkpoint Questions
+
+Q1: What does gcc hello.c -o hello do?
+A1: It compiles hello.c into an executable called hello.
+
+Q2: Why do we need ./hello instead of just hello?
+A2: By default, the shell doesn’t search the current directory (.) for executables, so we explicitly run ./hello.
